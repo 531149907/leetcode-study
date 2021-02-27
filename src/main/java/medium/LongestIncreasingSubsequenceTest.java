@@ -1,6 +1,6 @@
 package medium;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
  */
 public class LongestIncreasingSubsequenceTest {
     @Test
-    void test() {
+    public void test() {
         int[] nums = new int[]{10, 9, 2, 5, 3, 7, 101, 18};
 
         System.out.println(lengthOfLIS(nums));

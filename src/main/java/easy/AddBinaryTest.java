@@ -1,6 +1,5 @@
 package easy;
 
-
 import org.junit.Test;
 
 /**

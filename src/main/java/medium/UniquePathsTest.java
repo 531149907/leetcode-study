@@ -1,13 +1,13 @@
 package medium;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class UniquePathsTest {
     @Test
-    void test() {
+    public void test() {
         int m = 3;
         int n = 7;
 

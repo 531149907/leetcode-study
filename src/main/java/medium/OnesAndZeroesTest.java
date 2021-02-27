@@ -1,13 +1,13 @@
 package medium;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class OnesAndZeroesTest {
     @Test
-    void test() {
+    public void test() {
         String[] strs = new String[]{"10", "0001", "111001", "1", "0"};
         int m = 5;
         int n = 3;

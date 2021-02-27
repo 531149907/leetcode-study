@@ -1,13 +1,13 @@
 package medium;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class BestTimeToBuyAndSellStockWithTransactionFeeTest {
     @Test
-    void test() {
+    public void test() {
         int[] prices = new int[]{1, 3, 2, 8, 4, 9};
         int fee = 2;
 

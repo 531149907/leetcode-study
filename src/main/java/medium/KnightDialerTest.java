@@ -1,13 +1,13 @@
 package medium;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class KnightDialerTest {
     @Test
-    void test() {
+    public void test() {
         int n = 3;
         System.out.println(knightDialer(n));
     }
