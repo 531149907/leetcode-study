@@ -1,10 +1,10 @@
 package medium;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class AddTwoNumbersTest {
     @Test
-    void test() {
+    public void test() {
         ListNode l1 = new ListNode(2, new ListNode(3, new ListNode(8, new ListNode(7, new ListNode(6, new ListNode(9))))));
         ListNode l2 = new ListNode(7, new ListNode(9, new ListNode(9, new ListNode(8, new ListNode(2, new ListNode(1, new ListNode(0, new ListNode(2))))))));
 

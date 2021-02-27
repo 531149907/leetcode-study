@@ -1,13 +1,13 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class ToeplitzMatrixTest {
     @Test
-    void test() {
+    public void test() {
         int[][] matrix = new int[][]{{1, 2, 3, 4}, {5, 1, 2, 3}, {9, 5, 1, 2}};
         System.out.println(isToeplitzMatrix(matrix));
     }

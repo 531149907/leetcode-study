@@ -1,6 +1,6 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Stack;
 
@@ -9,7 +9,7 @@ import java.util.Stack;
  */
 public class ValidParenthesesTest {
     @Test
-    void test() {
+    public void test() {
         String s = "{}[({[]})]";
         System.out.println(isValid(s));
     }

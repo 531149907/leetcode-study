@@ -1,13 +1,13 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class MergeTwoSortedListsTest {
     @Test
-    void test() {
+    public void test() {
         ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
         ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
 

@@ -1,6 +1,6 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class TwoSumTest {
     @Test
-    void test() {
+    public void test() {
         int[] nums = new int[]{2, 7, 11, 15};
         int target = 9;
         System.out.println(Arrays.toString(twoSum(nums, target)));

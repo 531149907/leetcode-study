@@ -1,13 +1,14 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class AddBinaryTest {
     @Test
-    void test() {
+    public void test() {
         String a = "1111";
         String b = "1111";
 

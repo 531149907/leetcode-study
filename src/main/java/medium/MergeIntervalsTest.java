@@ -1,6 +1,6 @@
 package medium;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Stack;
@@ -10,7 +10,7 @@ import java.util.Stack;
  */
 public class MergeIntervalsTest {
     @Test
-    void test() {
+    public void test() {
         int[][] intervals = new int[][]{{1, 4}, {2,3}};
 
         System.out.println(Arrays.deepToString(merge(intervals)));

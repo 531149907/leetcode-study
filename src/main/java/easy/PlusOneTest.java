@@ -1,6 +1,6 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
  */
 public class PlusOneTest {
     @Test
-    void test() {
+    public void test() {
         int[] digits = new int[]{3, 3};
 
         System.out.println(Arrays.toString(plusOne(digits)));

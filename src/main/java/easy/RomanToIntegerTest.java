@@ -1,6 +1,6 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Map;
 
@@ -9,7 +9,7 @@ import java.util.Map;
  */
 public class RomanToIntegerTest {
     @Test
-    void test() {
+    public void test() {
         String s = "DCXXI";
         System.out.println(romanToInt(s));
     }
