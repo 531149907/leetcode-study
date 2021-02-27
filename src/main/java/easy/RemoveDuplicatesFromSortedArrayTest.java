@@ -1,13 +1,13 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class RemoveDuplicatesFromSortedArrayTest {
     @Test
-    void test() {
+    public void test() {
         int[] nums = new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
 
         System.out.println(removeDuplicates(nums));

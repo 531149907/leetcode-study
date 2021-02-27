@@ -1,13 +1,13 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class LongestCommonPrefixTest {
     @Test
-    void test() {
+    public void test() {
         String[] strs = new String[]{"ab", "a"};
         System.out.println(longestCommonPrefix(strs));
     }

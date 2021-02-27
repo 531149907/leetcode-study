@@ -1,13 +1,13 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class ReverseIntegerTest {
     @Test
-    void test() {
+    public void test() {
         int x = 1001;
         System.out.println(reverse(x));
     }

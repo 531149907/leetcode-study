@@ -1,13 +1,13 @@
 package other.string;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class KmpTest {
     @Test
-    void test() {
+    public void test() {
         String text = "abcbcab";
         String pattern = "ca";
 

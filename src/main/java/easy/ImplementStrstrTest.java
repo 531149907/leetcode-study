@@ -1,13 +1,13 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class ImplementStrstrTest {
     @Test
-    void test() {
+    public void test() {
         String haystack = "dddeer";
         String needle = "de";
 

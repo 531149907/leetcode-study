@@ -1,13 +1,13 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class LengthOfLastWordTest {
     @Test
-    void test() {
+    public void test() {
         String s = "a ";
         System.out.println(lengthOfLastWord(s));
     }

@@ -1,13 +1,13 @@
 package easy;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author zhouzhixuan
  */
 public class SearchInsertPositionTest {
     @Test
-    void test() {
+    public void test() {
         int[] nums = new int[]{1, 3, 5, 6};
         int target = 0;
 
