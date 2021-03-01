@@ -2,13 +2,17 @@ package other.tree;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 /**
  * @author zhouzhixuan
  */
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
 public final class TreeNode {
     int value;
@@ -49,17 +53,35 @@ public final class TreeNode {
         System.out.println("pre: " + root.value);
     }
 
-    public static TreeNode buildTree(int[] preOrderTravel, int[] midOrderTravel) {
-        if (preOrderTravel.length == 0) {
+    public static TreeNode buildTree(List<Integer> preOrder, List<Integer> midOrder) {
+        if(preOrder.isEmpty()){
             return null;
         }
 
-        if (midOrderTravel.length == 0) {
-            return null;
+        TreeNode treeNode = new TreeNode(preOrder.get(0));
+
+        if (midOrder.size() == 1) {
+            return treeNode;
         }
 
-        TreeNode root = new TreeNode(preOrderTravel[0]);
-        root.left = buildTree();
-        root.right = buildTree();
+        int splitIndex = -1;
+
+        for (int i = 0; i < midOrder.size(); i++) {
+            if (midOrder.get(i) == treeNode.value) {
+                splitIndex = i;
+                break;
+            }
+        }
+
+        List<Integer> pre1 = preOrder.subList(1, splitIndex + 1);
+        List<Integer> mid1 = midOrder.subList(0, splitIndex);
+
+        List<Integer> pre2 = preOrder.subList(splitIndex + 1, preOrder.size());
+        List<Integer> mid2 = midOrder.subList(splitIndex + 1, midOrder.size());
+
+        treeNode.left = buildTree(pre1, mid1);
+        treeNode.right = buildTree(pre2, mid2);
+
+        return treeNode;
     }
 }

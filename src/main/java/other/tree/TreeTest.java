@@ -2,6 +2,9 @@ package other.tree;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 /**
  * @author zhouzhixuan
  */
@@ -23,9 +26,10 @@ public class TreeTest {
 
     @Test
     public void rebuildTest() {
-        int[] midOrder = new int[]{7, 4, 10, 8, 11, 2, 12, 9, 5, 1, 6, 3};
-        int[] lastOrder = new int[]{7, 10, 11, 8, 4, 12, 9, 5, 2, 6, 3, 1};
+        int[] preOrder = new int[]{1, 2, 4, 3, 5, 7, 6};
+        int[] midOrder = new int[]{4, 2, 1, 5, 7, 3, 6};
 
-
+        TreeNode node = TreeNode.buildTree(Arrays.stream(preOrder).boxed().collect(Collectors.toList()), Arrays.stream(midOrder).boxed().collect(Collectors.toList()));
+        TreeNode.preOrderTravel(node);
     }
 }
